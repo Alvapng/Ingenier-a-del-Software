@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "../../Algo 2/noguera-alvaro-tp-complejidad"
+		},
+		{
+			"path": "../../Algo 2/tp Btree"
+		},
+		{
+			"path": "../PracticaJs"
+		},
+		{
+			"path": "../../Algo 2/noguera-alvaro-tp-arboles"
+		},
+		{
+			"path": "../Tutorial JS"
+		},
+		{
+			"path": "../Login"
+		},
+		{
+			"path": "../Curso Html y css"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Tutorial React"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "login tp2"
+	}
+}
