@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABM con LocalStorage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Gestión de Elementos (ABM)</h2>
+
+      <!-- Formulario para Alta y Modificación -->
+      <form id="itemForm">
+        <!-- Campo oculto para saber si editamos o creamos -->
+        <input type="hidden" id="itemId" />
+
+        <div class="input-group">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            placeholder="Ingrese el nombre"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="descripcion">Descripción</label>
+          <input
+            type="text"
+            id="descripcion"
+            placeholder="Ingrese la descripción"
+            required
+          />
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit" class="btn btn-save" id="btnSubmit">
+            Guardar
+          </button>
+          <button
+            type="button"
+            class="btn btn-cancel"
+            id="btnCancel"
+            style="display: none"
+          >
+            Cancelar
+          </button>
+        </div>
+      </form>
+
+      <!-- Tabla para Listar y Eliminar/Editar -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="itemTableBody">
+            <!-- Filas generadas dinámicamente con JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

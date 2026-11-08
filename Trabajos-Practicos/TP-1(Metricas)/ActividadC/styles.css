@@ -1,0 +1,147 @@
+:root {
+  --bg-color: #121214;
+  --card-bg: #202024;
+  --text-color: #e1e1e6;
+  --text-muted: #8d8d99;
+  --border-color: #323238;
+  --accent: #4ea8de;
+  --danger: #f75a68;
+  --success: #00b37e;
+  --warning: #e1a100;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  background-color: var(--card-bg);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--accent);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+input[type="text"] {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: var(--accent);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    opacity 0.2s,
+    background-color 0.2s;
+  flex: 1;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-save {
+  background-color: var(--success);
+  color: #fff;
+}
+
+.btn-cancel {
+  background-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.btn-edit {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.btn-delete {
+  background-color: var(--danger);
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.empty-message {
+  text-align: center;
+  color: var(--text-muted);
+  font-style: italic;
+}
